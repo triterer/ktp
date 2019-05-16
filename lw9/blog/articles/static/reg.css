@@ -1,0 +1,16 @@
+body {
+ background: black;
+ font-family: Tahoma, Arial, sans-serif;
+ color: #333;
+ color: white;
+}
+.content{
+ width: 90px;
+ margin-left: auto;
+ margin-right: auto;
+ text-align: center;
+ vertical-align: middle;
+}
+a{
+ color: red;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Архив статей</title>
+{% load static %}
+<link rel="stylesheet" href="static/indexst.css">
+</head>
+<body>
+
+<div class="header">
+</div>
+<div class="archive">
+    {% for post in posts %}
+    <div class="one-post">
+        <a class="post-title", href="{{post.id}}">{{ post.title }}</a>
+        <div class="article-info">
+            <div class="article-author">{{ post.author.username }}</div>
+            <div class="article-created-date">{{ post.created_date }}</div>
+        </div>
+        <p class="article-text">{{ post.get_excerpt }}</p>
+    </div>
+    {% endfor %}
+</div>
+</body>
+</html>
